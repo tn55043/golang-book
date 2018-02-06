@@ -2,7 +2,7 @@
 
 **Name:** *Parisa Thitirutchanont*
 
-**Nicknsme:** *Sea*
+**Nickname:** *Sea*
 
 **Job Title:** *Software Engineer*
 
