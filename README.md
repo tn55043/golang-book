@@ -10,6 +10,8 @@
 
 * chapter 2-1 : My First Program
 
+* chapter 2-2 : My Second Program
+
 ## Chapter 3
 
 ## Chapter 4
