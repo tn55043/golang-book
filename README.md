@@ -18,10 +18,10 @@
 
 * chapter3-2 : String Program
 
-* chapter3-3 : Floating point Program
+* chapter3-3 : Floating Point Program
 
 ## Chapter 4
 
-* chapter4-1 : Long/Short Declaration Program
+* chapter4-1 : Variable Declaration Program
 
 ## Chapter 5
