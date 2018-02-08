@@ -18,4 +18,10 @@ func main() {
 	z := "Hello, World"
 	fmt.Println(z)
 	fmt.Printf("Type: %T\n", z)
+	u := 123
+	fmt.Println(u)
+	fmt.Printf("Type: %T\n", u)
+	v := 12.12
+	fmt.Println(v)
+	fmt.Printf("Type: %T\n", v)
 }
