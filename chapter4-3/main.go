@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	fmt.Printf("Convert FEET to METER Enter feet: ")
+	fmt.Printf("Convert Feet to Meter Enter feet: ")
 	var feet float32
 	var meter float32
 	fmt.Scanf("%f", &feet)
