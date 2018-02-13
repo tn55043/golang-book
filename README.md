@@ -35,3 +35,5 @@
 * chapter5-2 : FizzBuzz Program
 
 * chapter5-3 : Switch Program
+
+* chapter5-4 : Random Program
