@@ -26,4 +26,6 @@
 
 * chapter4-2 : Convert Farenheit to Celsius Program
 
+* chapter4-3 : Convert FEET to METER Program
+
 ## Chapter 5
