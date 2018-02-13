@@ -24,4 +24,6 @@
 
 * chapter4-1 : Variable Declaration Program
 
+* chapter4-2 : Convert Farenheit to Celsius Program
+
 ## Chapter 5
