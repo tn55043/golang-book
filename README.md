@@ -32,5 +32,6 @@
 
 * chapter5-1 : For Loop Program
 
-* chapter5-1 : FizzBuzz Program
+* chapter5-2 : FizzBuzz Program
 
+* chapter5-3 : Switch Program
