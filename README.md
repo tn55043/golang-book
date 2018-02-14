@@ -61,3 +61,5 @@
 * chapter7-4 : Copy Slice Program
 
 * chapter7-5 : Map Program
+
+* chapter7-6 : Delete Map Program
