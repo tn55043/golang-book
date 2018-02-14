@@ -37,3 +37,7 @@
 * chapter5-3 : Switch Program
 
 * chapter5-4 : Random Program
+
+## Chapter 6
+
+* chapter6-1 : Function Program
