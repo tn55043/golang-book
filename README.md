@@ -44,4 +44,6 @@
 
 * chapter6-2 : Function02 Program
 
-* chapter6-3 : Function03 Program
+* chapter6-3 : Function Multiple Return Program
+
+* chapter6-4 : Function Multiple Input Program
