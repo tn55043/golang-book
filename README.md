@@ -66,4 +66,10 @@
 
 * chapter7-7 : Map02 Program
 
-* chapter7-8 : Map02 Program
+* chapter7-8 : Range01 Program
+
+* chapter7-9 : Range02 Program
+
+* chapter7-10 : Range03 Program
+
+* chapter7-11 : Range04 Program
