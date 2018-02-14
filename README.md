@@ -55,3 +55,5 @@
 * chapter7-1 : Arrey Program
 
 * chapter7-2 : Slice Program
+
+* chapter7-3 : Slice in Arrey Program
