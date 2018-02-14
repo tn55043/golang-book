@@ -65,3 +65,5 @@
 * chapter7-6 : Delete Map Program
 
 * chapter7-7 : Map02 Program
+
+* chapter7-8 : Map02 Program
