@@ -42,4 +42,6 @@
 
 * chapter6-1 : Function01 Program
 
-* chapter6-1 : Function02 Program
+* chapter6-2 : Function02 Program
+
+* chapter6-3 : Function03 Program
