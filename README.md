@@ -40,4 +40,6 @@
 
 ## Chapter 6
 
-* chapter6-1 : Function Program
+* chapter6-1 : Function01 Program
+
+* chapter6-1 : Function02 Program
