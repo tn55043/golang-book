@@ -95,3 +95,7 @@
 * chapter9-1 : Struct Type Program
 
 * chapter9-2 : Specific Type Program
+
+## Chapter 10
+
+* chapter10-1 : Method Program
