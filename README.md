@@ -89,3 +89,7 @@
 * chapter8-5 : Pass by Slice Value Program
 
 * chapter8-6 : Pass by Map Value Program
+
+## Chapter 9
+
+* chapter9-1 : Struct Type Program
