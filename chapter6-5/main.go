@@ -11,6 +11,7 @@ func main() {
 	}
 }
 
+/*
 func fizzbuzz(number int) (res string) {
 	if number%15 == 0 {
 		res = "FizzBuzz"
@@ -22,4 +23,16 @@ func fizzbuzz(number int) (res string) {
 		res = strconv.Itoa(number)
 	}
 	return res
+}
+*/
+
+func fizzbuzz(number int) string {
+	ln := [3]int{15, 3, 5}
+	str := [3]string{"FizzBuzz", "Fizz", "Buzz"}
+	for i := 0; i < len(ln); i++ {
+		if number%ln[i] == 0 {
+			return str[i]
+		}
+	}
+	return strconv.Itoa(number)
 }

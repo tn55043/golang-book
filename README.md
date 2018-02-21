@@ -12,7 +12,7 @@
 
 * chapter2-2 : My name is Program
 
-## Chapter 3
+## Chapter 3 : Type
 
 * chapter3-1 : Zero Value Program
 
@@ -20,7 +20,7 @@
 
 * chapter3-3 : Floating Point Program
 
-## Chapter 4
+## Chapter 4 : Variables
 
 * chapter4-1 : Variable Declaration Program
 
@@ -28,7 +28,7 @@
 
 * chapter4-3 : Convert Feet to Meter Program
 
-## Chapter 5
+## Chapter 5 : Conditions
 
 * chapter5-1 : For Loop Program
 
@@ -38,7 +38,7 @@
 
 * chapter5-4 : Random Program
 
-## Chapter 6
+## Chapter 6 : Function
 
 * chapter6-1 : Function01 Program
 
@@ -50,7 +50,7 @@
 
 * chapter6-5 : Function FizzBuzz Program
 
-## Chapter 7
+## Chapter 7 : Arrays, Slices, Map
 
 * chapter7-1 : Arrey Program
 
@@ -76,7 +76,7 @@
 
 ## exercise1 : WeatherCelsius Program
 
-## Chapter 8
+## Chapter 8 : Pointers
 
 * chapter8-1 : Pass by Copy Value Program
 
@@ -90,16 +90,16 @@
 
 * chapter8-6 : Pass by Map Value Program
 
-## Chapter 9
+## Chapter 9 : Struct
 
 * chapter9-1 : Struct Type Program
 
 * chapter9-2 : Specific Type Program
 
-## Chapter 10
+## Chapter 10 : Method
 
 * chapter10-1 : Method Program
 
-## Chapter 11
+## Chapter 11 : Interface
 
 * chapter11-1 : Interface Program
