@@ -87,3 +87,5 @@
 * chapter8-4 : Pass by Arrey Pointer Value Program
 
 * chapter8-5 : Pass by Slice Value Program
+
+* chapter8-6 : Pass by Map Value Program
