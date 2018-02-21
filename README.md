@@ -73,3 +73,9 @@
 * chapter7-10 : Range03 Program
 
 * chapter7-11 : Range04 Program
+
+## exercise1 : WeatherCelsius Program
+
+## Chapter 8
+
+* chapter8-1 : Pass by Copy Value Program
