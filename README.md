@@ -116,4 +116,4 @@
 
 * chapter12-2 : First Class Function02 Program
 
-* chapter12-3 : First Class Function03 Program
+* chapter12-3 : First Class Function and FizzBuzz Program
