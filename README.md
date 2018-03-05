@@ -123,3 +123,5 @@
 * chapter13-1 : Go Routine Program
 
 * chapter13-2 : Multiple Go Routine Program
+
+* chapter13-3 : Max CPU Go Routine Program
