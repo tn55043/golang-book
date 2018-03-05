@@ -122,8 +122,12 @@
 
 * chapter13-1 : Go Routine Program
 
-* chapter13-2 : Multiple Go Routine Program
+* chapter13-2 : Multiple Go Routine01 Program
 
 * chapter13-3 : Max CPU Go Routine Program
 
 * chapter13-4 : Wait Go Routine Program
+
+* chapter13-5 : Multiple Go Routine02 Program
+
+* chapter13-6 : Multiple Go Routine03 Program
