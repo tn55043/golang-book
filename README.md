@@ -131,3 +131,31 @@
 * chapter13-5 : Multiple Go Routine02 Program
 
 * chapter13-6 : Multiple Go Routine03 Program
+
+* chapter13-7 : Mutex Go Routine Program
+
+* chapter13-8 : Deadlock Go Routine Program
+
+* chapter13-9 : Channel Go Routine Program
+
+* chapter13-10 : Unbuffered Channel Go Routine Program
+
+* chapter13-11 : Buffered Channel Go Routine Program
+
+* chapter13-12 : Buffered Overfilled Channel Go Routine Program
+
+* chapter13-13 : Goroutine Leak Program
+
+* chapter13-14 : Channel-Direction Program
+
+* chapter13-15 : Close Channel-Direction Program
+
+* chapter13-16 : Channel-Select Program
+
+* chapter13-17 : Pipeline #1 Program
+
+* chapter13-18 : Pipeline #2 Program
+
+* chapter13-19 : Pipeline #3 Program
+
+* chapter13-20 : Timeout Program
