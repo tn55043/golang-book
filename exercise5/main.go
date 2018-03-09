@@ -19,11 +19,22 @@ func main() {
 
 func order(volumn int) (container []string) {
 	for i := 0; i <= volumn; i++ {
+		drinks := make(chan string)
 		coffee := recieveOrder(i)
 		go func() {
 			coffee = brew(coffee)
-			container = append(container, serve(coffee))
+			drinks <- coffee
+			close(drinks)
 		}()
+		container = append(container, out(drinks))
+	}
+
+	return
+}
+
+func out(in <- chan string) (out string) {
+	for x := range in {
+		out = serve(x)
 	}
 	return
 }
