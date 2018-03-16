@@ -55,11 +55,11 @@ func WeatherHandle(w http.ResponseWriter, r *http.Request) {
 
 	vars := mux.Vars(r)
 	name := vars["name"]
-	
+
 	/*
-	if vars["name"] == "" {
-		name = "World"
-	}
+		if vars["name"] == "" {
+			name = "World"
+		}
 	*/
 
 	fmt.Fprintf(w, "%s\n", name)
