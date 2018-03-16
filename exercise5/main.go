@@ -2,57 +2,99 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 	"time"
+
+	"github.com/gorilla/mux"
 )
 
-func main() {
-	volumn := 200
+type WeatherStub struct {
+	Coord struct {
+		Lon float64 `json:"lon"`
+		Lat float64 `json:"lat"`
+	} `json:"coord"`
+	Weather []struct {
+		ID          int    `json:"id"`
+		Main        string `json:"main"`
+		Description string `json:"description"`
+		Icon        string `json:"icon"`
+	} `json:"weather"`
+	Base string `json:"base"`
+	Main struct {
+		Temp     int `json:"temp"`
+		Pressure int `json:"pressure"`
+		Humidity int `json:"humidity"`
+		TempMin  int `json:"temp_min"`
+		TempMax  int `json:"temp_max"`
+	} `json:"main"`
+	Visibility int `json:"visibility"`
+	Wind       struct {
+		Speed float64 `json:"speed"`
+		Deg   int     `json:"deg"`
+	} `json:"wind"`
+	Clouds struct {
+		All int `json:"all"`
+	} `json:"clouds"`
+	Dt  int `json:"dt"`
+	Sys struct {
+		Type    int     `json:"type"`
+		ID      int     `json:"id"`
+		Message float64 `json:"message"`
+		Country string  `json:"country"`
+		Sunrise int     `json:"sunrise"`
+		Sunset  int     `json:"sunset"`
+	} `json:"sys"`
+	ID   int    `json:"id"`
+	Name string `json:"name"`
+	Cod  int    `json:"cod"`
+}
+
+func WeatherHandle(w http.ResponseWriter, r *http.Request) {
 	start := time.Now()
+	fmt.Printf("Start at %v", start)
 
-	container := order(volumn)
-	for _, cup := range container {
-		fmt.Println(cup)
+	vars := mux.Vars(r)
+	name := vars["name"]
+	
+	/*
+	if vars["name"] == "" {
+		name = "World"
 	}
-	end := time.Now()
-	fmt.Println(end.Sub(start))
+	*/
+
+	fmt.Fprintf(w, "%s\n", name)
+	fmt.Fprintf(w, "14c shower rain")
+	fmt.Printf("Completed in %v", time.Since(start))
 }
 
-func order(volumn int) (container []string) {
-	for i := 0; i <= volumn; i++ {
-		drinks := make(chan string)
-		coffee := recieveOrder(i)
-		go func() {
-			coffee = brew(coffee)
-			drinks <- coffee
-			close(drinks)
-		}()
-		container = append(container, out(drinks))
-	}
+func WeatherAllHandle(w http.ResponseWriter, r *http.Request) {
+	start := time.Now()
+	fmt.Printf("Start at %v", start)
 
-	return
+	//
+
+	fmt.Printf("Completed in %v", time.Since(start))
 }
 
-func out(in <- chan string) (out string) {
-	for x := range in {
-		out = serve(x)
-	}
-	return
+func NewRouter() http.Handler {
+	r := mux.NewRouter()
+	r.HandleFunc("/weather/{name}", WeatherHandle).Methods("GET")
+	r.HandleFunc("/weather/all", WeatherAllHandle).Methods("GET")
+	r.Use(loggingMiddleware)
+	return r
 }
 
-func recieveOrder(number int) string {
-	// cashier recieve order
-	time.Sleep(5 * time.Millisecond)
-	return fmt.Sprintf("order: %d", number)
+func loggingMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		start := time.Now()
+		fmt.Printf("Start at %v", start)
+
+		next.ServeHTTP(w, r)
+
+		fmt.Printf("Completed in %v", time.Since(start))
+	})
 }
 
-func brew(order string) string {
-	// barista brew coffee
-	time.Sleep(100 * time.Millisecond)
-	return fmt.Sprintf("%s %s", order, "espresso")
-}
-
-func serve(coffee string) string {
-	// waiter serve coffee
-	time.Sleep(5 * time.Millisecond)
-	return fmt.Sprintf("%s %s", coffee, "ready :)")
+func main() {
+	http.ListenAndServe(":3000", NewRouter())
 }
