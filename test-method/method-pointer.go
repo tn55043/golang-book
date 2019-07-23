@@ -15,12 +15,13 @@ func Scale(v *Vertex, f float64) {
 	v.Y = v.Y * f
 }
 
-func Abs(v Vertex) float64 {
+func Abs(v *Vertex) float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
 func main() {
-	v := Vertex{3, 4}
-	Scale(&v, 10)
-	fmt.Println(Abs(v))
+	v := &Vertex{3, 4}
+	fmt.Printf("Before scaling: %+v, Abs: %v\n", v, Abs(v))
+	Scale(v, 5)
+	fmt.Printf("After scaling: %+v, Abs: %v\n", v, Abs(v))
 }
